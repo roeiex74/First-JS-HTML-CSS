@@ -1,0 +1,64 @@
+.App {
+    margin: 1ch;
+}
+
+.App-logo {
+    height: 90px;
+    pointer-events: none;
+    margin: 0 5px 0 1px;
+    padding-bottom: 0%;
+    display: inline-block;
+}
+.NavBar-logo {
+    height: 50px;
+    pointer-events: none;
+    margin: 0 5px 0 1px;
+    padding-bottom: 0%;
+    display: inline-block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        float: top;
+    }
+}
+
+.App-header {
+    padding: 5px;
+    text-align: center;
+    /*background: #d8c3a5;*/
+    /*background: #73c8a9; /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #373b44, #73c8a9); /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #373b44, #73c8a9); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+    */
+    background: #2c3e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fd746c, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fd746c, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: rgba(0, 0, 0, 0.61);
+    font-size: 15px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.925), 1px 0 1px #000, 0 0 1px #000;
+}
+.returnHome {
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+}
+.nav-line-1 {
+    padding: 0;
+    margin: 0;
+}
+.nav-line-2 {
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

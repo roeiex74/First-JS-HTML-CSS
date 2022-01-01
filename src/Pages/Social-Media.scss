@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'Genericons';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff') format('woff'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot') format('truetype');
+}
+.page-class {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.social-body {
+    background-color: #222;
+    font-family: 'Arila', Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container {
+    margin: 0px auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.accordion {
+    background-color: #333;
+    width: 800px;
+    margin: auto;
+    min-width: 800px;
+    display: block;
+    list-style-type: none;
+    height: 200px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.tab {
+    display: inline-block;
+    background-color: #444;
+    border-right: #333 solid 1px;
+    width: 80px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    transition: all 0.27s ease-in-out 0.1s;
+}
+
+.tab:hover {
+    width: 556px;
+}
+
+.tab:hover .social a:before {
+    margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+    margin-left: -5px;
+}
+.tab .content {
+    background: white;
+    width: 556px;
+    height: 200px;
+    margin-left: 80px;
+    position: relative;
+    padding: 50px 0 0 15px;
+}
+
+.tab .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tab .content p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    line-height: 1.4rem;
+    padding-right: 30px;
+}
+.social a:before,
+.social a:after {
+    transition: all 0.2s ease-in-out 0.1s;
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 90px;
+    padding-left: 25px;
+    display: block;
+    font: normal 30px Genericons;
+    color: white;
+}
+
+.social a:after {
+    font-size: 48px;
+    padding-left: 20px;
+    padding-top: 80px;
+    margin-left: 85px;
+}
+/* Add Icons */
+/* Social media links: youtube  */
+.youtube a:before,
+.youtube a:after {
+    content: '\f213';
+}
+
+.youtube a:after {
+    background-color: #f00;
+}
+/* Social media links: instagram  */
+.instagram a:before,
+.instagram a:after {
+    content: '\f215';
+}
+
+.instagram a:after {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+/* Social media links: facebook  */
+.facebook a:before,
+.facebook a:after {
+    content: '\f204';
+}
+
+.facebook a:after {
+    background-color: #3b5998;
+}
+/* Social media links: codepen  */
+.snapchat a:before,
+.snapchat a:after {
+    content: '\f304';
+}
+
+.snapchat a:after {
+    background-color: #efeb00;
+}
+/* Social media links: linkedin  */
+.linkedin a:before,
+.linkedin a:after {
+    content: '\f207';
+}
+
+.linkedin a:after {
+    background-color: #00aeef;
+}
+/* responsive settings */
+@media (max-width: 950px) {
+    .container {
+        width: 70%;
+    }
+
+    .tab {
+        display: block;
+        width: 100%;
+        border-bottom: 3px #333 solid;
+    }
+
+    .acordion {
+        width: 100%;
+        display: block;
+        min-width: 450px;
+        height: auto;
+    }
+
+    .tab .content {
+        width: 100%;
+    }
+
+    .tab:hover {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .tab .content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .accordion {
+        width: 100%;
+        min-width: 350px;
+    }
+}
+/*Navigation css */
+.contact-div {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+$bg: #f3f8fa;
+$black: rgb(29, 75, 175);
+$white: #f7f7f8;
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
+    transition: $property $duration $ease;
+}
+
+* {
+    box-sizing: border-box;
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+.learn-more2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    &.learn-more2 {
+        width: 12rem;
+        height: auto;
+        .circle2 {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: $black;
+            border-radius: 1.625rem;
+            .icon2 {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: $white;
+                &.arrow2 {
+                    @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                    left: 0.625rem;
+                    width: 1.125rem;
+                    height: 0.125rem;
+                    background: none;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: -0.25rem;
+                        right: 0.0625rem;
+                        width: 0.625rem;
+                        height: 0.625rem;
+                        border-top: 0.125rem solid #fff;
+                        border-right: 0.125rem solid #fff;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+        .contact-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: $black;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &:hover {
+        .circle2 {
+            width: 100%;
+            .icon2 {
+                &.arrow2 {
+                    background: $white;
+                    transform: translate(1rem, 0);
+                }
+            }
+        }
+        .contact-text {
+            color: $white;
+        }
+    }
+}
+
+@supports (display: grid) {
+    #container2 {
+        grid-area: main;
+        align-self: center;
+        justify-self: center;
+    }
+}
+.center-fixed {
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -250px; /* Negative half of width. */
+}

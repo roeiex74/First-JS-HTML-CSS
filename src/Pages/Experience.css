@@ -1,0 +1,19 @@
+.experience-body {
+    border-radius: 5px;
+    background: #fffdf5;
+    min-height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    
+}
+.bnhp-body {
+    display: flex;
+    margin-bottom: 10%;
+}
+.idf-body {
+    display: flex;
+    margin-bottom: 10%;
+}

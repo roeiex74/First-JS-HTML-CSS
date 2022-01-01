@@ -1,0 +1,31 @@
+.thankyoubutton-block {
+    box-sizing: border-box;
+    display: block;
+    border-radius: 8px;
+}
+
+.thankyou-button {
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    padding: 8px 16px;
+    border-radius: 980px;
+    background: snow;
+    color: #1d1d1f;
+}
+.thankyou-button:hover {
+    background: #fff;
+    color: #050801;
+    box-shadow: 0 0 5px rgb(245, 241, 241), 0 0 25px rgb(245, 241, 241), 0 0 50px rgb(245, 241, 241), 0 0 200px rgb(245, 241, 241);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.center-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
